@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crie seu evento</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Crie e compartilhe seu evento.</h1>
+        <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+      </header>
+      <form id="my-form">
+        <fieldset>
+          <div class="fieldset-wrapper">
+          <legend>Informações do Evento</legend>
+
+          <div class="input-wrapper">
+            <label for="event-title"
+              >Título do evento <span>(mínimo 8 caracteres)</span>
+              <h2 id="required">*</h2>
+            </label>
+            <input
+              type="text"
+              id="event-title"
+              placeholder="Ex: Festa dos Ipes"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-link"
+              >Link do evento <span>(comece com https://)</span>
+              <h2 id="required">*</h2>
+            </label>
+            <input
+              type="url"
+              id="event-link"
+              placeholder="Ex: festadosipes.com.br"
+              required
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-whats"
+              >WhatsApp para Contato <span>(apenas números)</span>
+              <h2 id="required">*</h2>
+            </label>
+            <input
+              type="number"
+              id="event-whats"
+              placeholder="Ex: +55 (17) 9900-0000"
+              required
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-textarea">Informações extras </label>
+            <textarea
+              id=""
+          
+            ></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-category"
+              >Categoria
+              <h2 id="required">*</h2>
+          
+            </label>
+            <select id="categories" >
+              <option value="online">Casamento</option>
+              <option value="marketing">Marketing</option>
+              <option value="coaching">Coaching</option>
+              <option value="illuminati">Esquema de Piramide</option>     
+            </div>   
+            </select>
+          </div>
+
+          
+            <div class="fieldset-wrapper">
+            <legend>Privacidade</legend>
+
+            <div class="input-wrapper">
+              <label for="event-mail"
+                >E-mail do administrador <span>(digite um email válido)</span>
+                <h2 id="required">*</h2>
+              </label>
+              <input
+                type="email"
+                id="event-mail"
+                placeholder="Ex: administrador@festadosipes.com.br"
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-pass"
+                >Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span>
+                <h2 id="required">*</h2>
+              </label>
+              <input
+                type="password"
+                id="event-pass"
+                placeholder="Digite a senha de convite"
+                required
+              />
+            </div>
+
+            <div class="checkbox-wrapper">
+             
+              <input
+                type="checkbox"
+                id="event-checkbox"
+              />
+              <label for="event-checkbox"
+              >Evento privado?</span>
+            </label>
+            </div>
+
+            <div class="fieldset-wrapper">
+              <legend>Dia e hora</legend>
+
+              <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date"
+                  >Data
+                  <h2 id="required">*</h2>
+                </label>
+                <input
+                  type="date"
+                  id="event-date"
+                  placeholder="Ex: administrador@festadosipes.com.br"
+                  required
+                />
+              </div>
+
+             
+              <div class="input-wrapper">
+                <label for="event-begin"
+                  >Das
+                  <h2 id="required">*</h2>
+                </label>
+                <input
+                  type="time"
+                  id="event-begin"
+                  placeholder="Ex: administrador@festadosipes.com.br"
+                  required
+                />
+              </div>
+
+                 
+              <div class="input-wrapper">
+                <label for="event-end"
+                  >Até
+                  <h2 id="required">*</h2>
+                </label>
+                <input
+                  type="time"
+                  id="event-end"
+                  placeholder="Ex: administrador@festadosipes.com.br"
+                  required
+                />
+              </div>
+            </div>
+
+            </div>
+        </fieldset>
+      </form>
+      <footer>
+
+          <input form="my-form" class="button" type="submit" value="Salvar evento" />
+
+      </footer>
+    </div>
+  </body>
+</html>
